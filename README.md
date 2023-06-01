@@ -1,9 +1,10 @@
 <p align="center">
-<img src="https://i.imgur.com/ZzqzCtr.png" height="45%" width="45%" alt="Microsoft Active Directory Logo"/><img src="https://i.imgur.com/jOGiH4V.png" height="45%" width="45%" alt="Microsoft Active Directory Logo"/>
+<img src="https://i.imgur.com/ZzqzCtr.png" height="50%" width="50%" alt="Microsoft Active Directory Logo"/>
 </p>
 <p align="justify">
 A directory service that offers centralized management of network resources, including user accounts, computers, and permissions. It simplifies user management, enhances security, and enables seamless integration with various services and applications in a network environment.
 
+<h1>Welcome!</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 </p>
 <h2>Environments and Technologies Used</h2>
@@ -18,7 +19,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Configuration Steps</h2>
 
 - Step 1
 - Step 2
