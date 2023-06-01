@@ -1,13 +1,11 @@
 <p align="center">
-<img src="https://i.imgur.com/Enh9z72.png" height="640%" width="64%" alt="Microsoft Active Directory Logo"/>
-
-A cloud-based identity and access management service that provides secure user authentication, access control, and seamless integration with applications and services. It helps organizations manage user identities and enhance security across cloud and on-premises environments.
+<img src="https://i.imgur.com/Enh9z72.png" height="60%" width="60%" alt="Microsoft Active Directory Logo"/>
 </p>
-
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+<p align="justify">
+A directory service that offers centralized management of network resources, including user accounts, computers, and permissions. It simplifies user management, enhances security, and enables seamless integration with various services and applications in a network environment.
 
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
-
+</p>
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
