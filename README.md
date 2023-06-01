@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Enh9z72.png" height="60%" width="60%" alt="Microsoft Active Directory Logo"/>
+<img src="https://i.imgur.com/ZzqzCtr.png" height="45%" width="45%" alt="Microsoft Active Directory Logo"/><img src="https://i.imgur.com/jOGiH4V.png" height="45%" width="45%" alt="Microsoft Active Directory Logo"/>
 </p>
 <p align="justify">
 A directory service that offers centralized management of network resources, including user accounts, computers, and permissions. It simplifies user management, enhances security, and enables seamless integration with various services and applications in a network environment.
