@@ -33,14 +33,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Step Process</h2>
 
-<h3>&#9312; Create a</h3>
+<h3>&#9312; Create a Domain Controller VM</h3>
 
-- In the Search Box at the top header, type and select "Resource groups".
-  - If "Resource groups" is already listed on the front page, then you can simply click on it, rather than manually searching.
+- In the Search Box at the top header, type and select "Virtual machines".
+  - If "Virtual machines" is already listed on the front page, then you can simply click on it, rather than manually searching.
+
+<p>
+<img src="https://i.imgur.com/tiC5aA4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+- Name your Virtual Machine anyway you want (this example uses **DC-01**)
+  - Resource Group is automatically given a name when naming the Virtual Machine, but you can change it if you wish.
+- Change the Region that best suites your location (this example uses **(US) West US 3**)
+- Change the Image to a Windows Server, as this will become our Domain Controller VM (this example uses **Windows Server 2022 Datacenter: Azure Edition**)
+- Make sure the Size is adequate enough to run this server (this example uses **Standard_E2s_v3 - 2 vcpus, 16 GiB memory**)
+- Create a username of your choice and password (this example uses **dcuser**)
+- IF there is a Checkbox at the end, make sure that is CHECKED!
+- Click "Review + create", then once Validation passed, click "Create".
+
 
 <p>
 <img src="https://i.imgur.com/AsbGinQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
