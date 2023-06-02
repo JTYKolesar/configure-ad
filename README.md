@@ -2,11 +2,16 @@
 <img src="https://i.imgur.com/ZzqzCtr.png" height="50%" width="50%" alt="Microsoft Active Directory Logo"/>
 </p>
 <p align="justify">
-A directory service that offers centralized management of network resources, including user accounts, computers, and permissions. It simplifies user management, enhances security, and enables seamless integration with various services and applications in a network environment.
 
-<h1>Welcome!</h1>
+<h1>Microsoft Azure - Active Directory</h1>
+
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 </p>
+
+<h2>Prerequisites</h2>
+
+- 
+
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
