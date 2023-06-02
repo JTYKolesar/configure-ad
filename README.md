@@ -55,15 +55,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/AsbGinQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
-<h3>&#9312; Create a Client VM</h3>
+<h3>&#9313; Create a Client VM</h3>
 
 - Follow the same steps as before for creating a virtual machine.
   - However, the Resource Group should be assigned to the one created for the Domain Controller VM (this example uses **DC-01_group**).
 - Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**)
+- Once done, click "Next" until you reach "Networking" (you can also simply click the Networking tab at the top).
 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/uEFPG9B.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+
+
 <br />
 
 <p>
