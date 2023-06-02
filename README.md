@@ -69,11 +69,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 
 - The only purpose here is to make sure that the "Virtual network" is set to the Vnet that the Domain Controller VM automatically created (this example uses **DC-01-vnet**).
+- Select the dropdown box for Subnet and confirm the default selection (this example uses **default (10.0.0.0/24)**).
+  - Despite visually shown that the Subnet is set, you must manually confirm that configuration.
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
 
 <p>
-<img src="https://i.imgur.com/aGuATbc.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/mnVSCa2.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 <hr>
