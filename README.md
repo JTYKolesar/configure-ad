@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/CcM4XsW.png" height="50%" width="50%" alt="Microsoft Active Directory Logo"/>
+<img src="https://i.imgur.com/CcM4XsW.png" height="55%" width="55%" alt="Microsoft Active Directory Logo"/>
 </p>
 <p align="justify">
 
@@ -22,7 +22,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Configuration Steps</h2>
 
-- Setup Domain Controller VM (Windows Server 2022) and Client VM (Windows 10) using same Resource Group and Vnet
+- Setup 2 Virtual Machines within Azure:
+  - Domain Controller VM (Windows Server 2022) and Client VM (Windows 10) using same Resource Group and Vnet
   - Ensure Connectivity between the client and Domain Controller
 - Install Active Directory Domain Services within Domain Controller VM
 - Create an Admin and Standard User Account in AD
@@ -32,8 +33,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Configuration Steps</h2>
 
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/AsbGinQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
