@@ -31,9 +31,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Setup Remote Desktop for non-administrative users on Client VM
 - Create additional users and attempt to log into Client VM as one of those users
 
-<h2>Configuration Steps</h2>
+<h2>Step Process</h2>
 
+<h3>&#9312; Create a</h3>
 
+- In the Search Box at the top header, type and select "Resource groups".
+  - If "Resource groups" is already listed on the front page, then you can simply click on it, rather than manually searching.
 
 <p>
 <img src="https://i.imgur.com/AsbGinQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
