@@ -3,14 +3,10 @@
 </p>
 <p align="justify">
 
-<h1>Microsoft Azure - Active Directory</h1>
+<h1>Microsoft Azure - Active Directory (AD)</h1>
 
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 </p>
-
-<h2>Prerequisites</h2>
-
-- 
 
 <h2>Environments and Technologies Used</h2>
 
@@ -26,10 +22,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Setup Domain Controller VM (Windows Server 2022) and Client VM (Windows 10) using same Resource Group and Vnet
+  - Ensure Connectivity between the client and Domain Controller
+- Install Active Directory Domain Services within Domain Controller VM
+- Create an Admin and Standard User Account in AD
+- Link Cilent VM to a domain
+- Setup Remote Desktop for non-administrative users on Client VM
+- Create additional users and attempt to log into Client VM as one of those users
 
 <h2>Deployment and Configuration Steps</h2>
 
