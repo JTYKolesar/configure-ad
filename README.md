@@ -49,38 +49,40 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Make sure the Size is adequate enough to run this server (this example uses **Standard_E2s_v3 - 2 vcpus, 16 GiB memory**).
 - Create a username of your choice and password (this example uses **dcuser**).
 - IF there is a Licensing Checkbox at the end, make sure that is CHECKED!
-- Skip everything else and click "Review + create", then once Validation passed, click "Create".
+- Skip everything else and click "Review + create".
+- If Validation passed, click "Create".
 
 <p>
-<img src="https://i.imgur.com/AsbGinQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/AsbGinQ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
+<hr>
 
 <h3>&#9313; Create a Client VM</h3>
 
 - Follow the same steps as before for creating a virtual machine.
   - However, the Resource Group should be assigned to the one created for the Domain Controller VM (this example uses **DC-01_group**).
 - Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**)
-- Once done, click "Next" until you reach "Networking" (you can also simply click the Networking tab at the top).
+- Once done, click "Next" until you reach "Networking" (OR you can simply click the Networking tab at the top).
 
 <p>
-<img src="https://i.imgur.com/uEFPG9B.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/2QaEfg9.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-
-<br />
+- The only purpose here is to make sure that the "Virtual network" is set to the Vnet that the Domain Controller VM automatically created (this example uses **DC-01-vnet**).
+- Skip everything else and click "Review + create".
+- If Validation passed, click "Create".
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/aGuATbc.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
+
+<hr>
+
+
+
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
 <br />
