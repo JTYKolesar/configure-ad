@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/ZzqzCtr.png" height="50%" width="50%" alt="Microsoft Active Directory Logo"/>
+<img src="https://i.imgur.com/CcM4XsW.png" height="50%" width="50%" alt="Microsoft Active Directory Logo"/>
 </p>
 <p align="justify">
 
@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Setup Remote Desktop for non-administrative users on Client VM
 - Create additional users and attempt to log into Client VM as one of those users
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>Configuration Steps</h2>
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
