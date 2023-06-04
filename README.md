@@ -101,6 +101,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/RrkJ4G5.png" height="80%" width="80%" alt="Azure Step 5-5"/>
 </p>
 <p align="center">
-<img src="https://i.imgur.com/CaVbQit.png" height="80%" width="80%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/eRhuXca.png" height="80%" width="80%" alt="Azure Step 5-5"/>
 </p>
-<hr>
+
+- On the Domain Controller VM, press the Windows key (or Start Button) and type and select "Windows Defender Firewall with Advanced Security".
+
+<p align="center">
+<img src="https://i.imgur.com/ljx8ZKr.jpg" height="80%" width="80%" alt="Azure Step 5-5"/>
+</p>
