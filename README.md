@@ -75,10 +75,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <hr>
 
-<h3>&#9314; Ensure Connectivity between the client and Domain Controller</h3>
+<h3>&#9314; Ensure Connectivity between the Client and Domain Controller</h3>
 
-- Login to Client-01 VM with Remote Desktop:
-  - Go to your Clien-01 VM that was just created and COPY the public IP address (located on the right side).
+- Login to both the Domain Controller and Client-01 VMs with Remote Desktop:
+  - We'll start with the Client-01 VM that was just created and COPY the public IP address (located on the right side).
 <p>
 <img src="https://i.imgur.com/cET8L1h.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
@@ -95,13 +95,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/ATSX87v.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Toggle any settings you want, then click "Accept".
+- You can minimize the Virtual Machine window and do the same thing for the Domain Controller VM.
+  - Because Domain Controller VM uses Windows Server, the Server Manager will automatically open on bootup.
 <p align="center">
-<img src="https://i.imgur.com/VlNH4O9.jpg" height="50%" width="50%" alt="Azure Step 5-4"/>
+<img src="https://i.imgur.com/RrkJ4G5.png" height="80%" width="80%" alt="Azure Step 5-5"/>
 </p>
-
-- 
 <p align="center">
-<img src="https://i.imgur.com/PpLmQO7.jpg" height="80%" width="80%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/CaVbQit.png" height="80%" width="80%" alt="Azure Step 5-5"/>
 </p>
 <hr>
