@@ -135,9 +135,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p align="center">
 <img src="https://i.imgur.com/MoC4qFF.png" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
+<hr>
 
-- 
+<h3>Install Active Directory Domain Services within Domain Controller VM</h3>
 
+- Login to DC-01 VM.
+- Open "Server Manager" (if not open already), and click "Add roles and features" on the front page.
 <p align="center">
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
