@@ -139,26 +139,42 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Install Active Directory Domain Services within Domain Controller VM</h3>
 
-- Login to DC-01 VM.
-- Open "Server Manager" (if not open already), and click "Add roles and features" on the front page.
+- Login to DC-01 VM and open "Server Manager" (if not open already).
+- Click on "Add Roles and Features" (Number 2) on the front page.
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/K9zAZa2.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Keep clicking "Next" until you reach Server Roles tab.
+- Checkmark "Active Directory Domain Services", and prompt will appear:
+- Click "Add Features".
+- Keep clicking "Next" until the Confirmation tab.
+- Click "Install" then close once completed.
+<p align="center">
+<img src="https://i.imgur.com/9nOIZB0.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Back on the Server Manager, click on the flag icon with a caution symbol on it (located at top-right header).
+- Click "Promote this server to a domain controller"
+<p align="center">
+<img src="https://i.imgur.com/AbsEMHE.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- In the Deployment Configuration tab, select "Add a new forest".
+- Type any domain name you wish to use (this example uses **mydomain.com**)
+- Click "Next".
+<p align="center">
+<img src="https://i.imgur.com/4yWhBwY.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Create a password of your choice.
+- Keep clicking "Next" until the "Install" option is enabled, then click "Install".
+<p align="center">
+<img src="https://i.imgur.com/PbAlutu.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/MIIpoBI.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - 
-
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-- 
-
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-- 
-
 <p align="center">
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
