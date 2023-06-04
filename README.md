@@ -189,18 +189,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>Create an Admin and Normal User Account in AD</h3>
 
 - On the Server Manager, click on "Tools" on the top-right header, then click "Active Directory Users and Computers".
+  - You can also search this using the Windows Key (or Start Button).
 <p align="center">
 <img src="https://i.imgur.com/dIAU7JS.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- For testing purposes, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")
+  - Right-click "mydomain.com" on the left sidebar.
+  - Hover "New", then click "Organizational Unit".
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/JnbcP7m.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- We'll name one `_EMPLOYEES` and the other `_ADMINS`.
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/wpGZ2yx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - 
