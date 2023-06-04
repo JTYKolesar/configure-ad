@@ -206,14 +206,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/wpGZ2yx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- Next, we'll add a new Admin user account.
+  - Right-click on `_ADMINS`(or an empty space within the folder).
+  - Hover "New", then click "User".
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/dyPs4Nq.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- Create a name and a login name for this Admin user, then click "Next".
+- Create a password of your choice for that account.
+- Uncheck "User must change password at next logon".
+- Checkmark "Password never expires".
+- Click "Next" until the account is created.
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/S3asA8k.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - 
