@@ -107,5 +107,50 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - On the Domain Controller VM, press the Windows key (or Start Button) and type and select "Windows Defender Firewall with Advanced Security".
 
 <p align="center">
-<img src="https://i.imgur.com/ljx8ZKr.jpg" height="80%" width="80%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/ljx8ZKr.jpg" height="64%" width="64%" alt="Azure Step 5-5"/>
+</p>
+
+- Click "Inbound Rules" (on the left sidebar).
+- Find the two names "Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)" (easier to sort by Protocol).
+- Select them both, then click "Enable Rule" on the right sidebar (or right-click select).
+
+<p align="center">
+<img src="https://i.imgur.com/u1QjRwc.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Once those are enabled, go into the Client-01 VM.
+- Press the Windows key (or Start Button), the type and select CMD or "Command Prompt" (you can run as Admin if desired).
+
+<p align="center">
+<img src="https://i.imgur.com/RcjEEef.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
