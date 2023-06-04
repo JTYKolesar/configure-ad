@@ -186,7 +186,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <hr>
 
-<h3>Create an Admin and Normal User Account in AD</h3>
+<h3>Create an Admin Account in AD</h3>
 
 - On the Server Manager, click on "Tools" on the top-right header, then click "Active Directory Users and Computers".
   - You can also search this using the Windows Key (or Start Button).
@@ -213,7 +213,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/dyPs4Nq.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Create a name and a login name for this Admin user, then click "Next".
+- Create a name and a login name for this Admin user, then click "Next" (this example uses **Jane Doe** / **jane_admin**)
 - Create a password of your choice for that account.
 - Uncheck "User must change password at next logon".
 - Checkmark "Password never expires".
@@ -222,12 +222,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/S3asA8k.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- The account still doesn't have admin privileges yet:
+  - Right-click on the new account, then click "Properties".
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/3wze3wC.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- Click on the "Member Of" tab, the click the "Add" button.
+- For testing purposes, type in the word "domain", then click "Check Names", so we can see all of the built-in groups.
+- Select "Domain Admins", then click "Ok".
+- Now you will need to logoff of the account.
+  - You can also just close the virtual machine.
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/OnXFkFv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
