@@ -75,7 +75,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - If Validation passed, click "Create".
 
 <p>
-<img src="https://i.imgur.com/mnVSCa2.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/KIMAM1m.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 <hr>
