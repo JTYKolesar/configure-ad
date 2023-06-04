@@ -181,11 +181,44 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select "More Choices", then click "Use a different account".
 - Now change the username to add your domain name at the beginning of the original username (this example uses mydomain.com, thus the username becomes **mydomain.com\dcuser**)
   - NOTE: Don't forget what password to use when logging into the DC-01 VM!
+<p align="center">
+<img src="https://i.imgur.com/VaRRM3O.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
 <hr>
 
 <h3>Create an Admin and Normal User Account in AD</h3>
 
--
+- On the Server Manager, click on "Tools" on the top-right header, then click "Active Directory Users and Computers".
 <p align="center">
-<img src="https://i.imgur.com/VaRRM3O.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/dIAU7JS.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
