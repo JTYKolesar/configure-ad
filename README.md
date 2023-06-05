@@ -230,9 +230,51 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Click on the "Member Of" tab, the click the "Add" button.
 - For testing purposes, type in the word "domain", then click "Check Names", so we can see all of the built-in groups.
-- Select "Domain Admins", then click "Ok".
-- Now you will need to logoff of the account.
+- Select "Domain Admins", then "OK".
+- Click "Apply", then "OK" again.
+- Now you will need to restart the virtual machine.
   - You can also just close the virtual machine.
 <p align="center">
 <img src="https://i.imgur.com/OnXFkFv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Inside Azure, go to DC-01 VM page.
+- Click on "Networking", then COPY the NIC Private IP (this example uses **10.0.0.4**).
+<p align="center">
+<img src="https://i.imgur.com/n2Dho49.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+-
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+-
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+-
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+-
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+-
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
