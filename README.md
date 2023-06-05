@@ -244,14 +244,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/n2Dho49.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- Next, go to Client-01 VM page.
+- Click on "Networking", then click on the "Network Interface" for your VM (this example uses client-01655).
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/GUc31Fx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- Click on "DNS servers".
+- Select the "Custom" option under DNS server.
+- Input the NIC Private IP from DC-01 VM (this example uses **10.0.0.4**).
+- Click "Save", then restart the Client-01 VM.
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/6jpSDb0.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 -
