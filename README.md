@@ -236,14 +236,32 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/OnXFkFv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Logoff of the Domain Controller, then logon to the newly created admin account (this example uses **mydomain.com\jane_admin**).
+- Logoff of DC-01 VM.
+- Now we have to make sure that the DC's DNS IP is set to "Static", so the users can connect using the domain.
+  - Inside Azure, go to DC-01 VM page.
+  - Click on "Networking", then click on the "Network Interface" (this example uses **dc-015**).
+<p align="center">
+<img src="https://i.imgur.com/iso00DP.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Change the Assignment at the bottom to "Static".
+- Click "Save".
+<p align="center">
+<img src="https://i.imgur.com/bkA40gJ.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+Logon to the newly created admin account (this example uses **mydomain.com\jane_admin**).
   - Use DC-01 Public IP address to Remote Desktop (this example uses **20.150.151.197**).
 <p align="center">
 <img src="https://i.imgur.com/r45UPzB.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Inside Azure, go to DC-01 VM page.
-- Click on "Networking", then COPY the NIC Private IP (this example uses **10.0.0.4**).
+
+
+
+  - 
+  - 
+  - then COPY the NIC Private IP (this example uses **10.0.0.4**).
 <p align="center">
 <img src="https://i.imgur.com/n2Dho49.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
