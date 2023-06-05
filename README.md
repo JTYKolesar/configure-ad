@@ -232,10 +232,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - For testing purposes, type in the word "domain", then click "Check Names", so we can see all of the built-in groups.
 - Select "Domain Admins", then "OK".
 - Click "Apply", then "OK" again.
-- Now you will need to restart the virtual machine.
-  - You can also just close the virtual machine.
 <p align="center">
 <img src="https://i.imgur.com/OnXFkFv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Logoff of the Domain Controller, then logon to the newly created admin account (this example uses **mydomain.com\jane_admin**).
+  - Use DC-01 Public IP address to Remote Desktop (this example uses **20.150.151.197**).
+<p align="center">
+<img src="https://i.imgur.com/r45UPzB.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Inside Azure, go to DC-01 VM page.
