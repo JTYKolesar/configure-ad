@@ -205,12 +205,12 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 </p>
 
 - Once completed, log back into the DC-01 VM.
-  - However, you cannot use the same username as before, for it will fail your attempt.
+  - _However, you should not be able use the same username as before, now that it requires the domain name._
 - Select "More Choices", then click "Use a different account".
-- Now change the username to add your domain name at the beginning of the original username (this example uses mydomain.com, thus the username becomes **mydomain.com\dcuser**)
-  - NOTE: Don't forget what password to use when logging into the DC-01 VM!
+- Change the username to add the domain name at the beginning of the original username (this example used mydomain.com, thus the username becomes **mydomain.com\dcuser**)
+  - _NOTE: Don't forget what password to use when logging into the DC-01 VM!_
 <p align="center">
-<img src="https://i.imgur.com/VaRRM3O.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/ruqHto2.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 <hr>
 
