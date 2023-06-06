@@ -83,7 +83,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
 _Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
-- Inside Azure Portal, go to DC-01 VM Overview page.
+- From Azure Portal, go to DC-01 VM Overview page.
 - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
 <img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 2-1"/>
@@ -214,76 +214,82 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 </p>
 <hr>
 
-<h3>&#9317;Create an Admin Account in AD</h3>
+<h3>&#9317; Create an Admin Account in Active Directory</h3>
 
-- On the Server Manager, click on "Tools" on the top-right header, then click "Active Directory Users and Computers".
-  - You can also search this using the Windows Key (or Start Button).
+- On the Domain Controller VM, in Server Manager, click on "Tools" on the top-right header.
+- Click "Active Directory Users and Computers".
+  - _This can also be searched from the Windows Key/Button._
 <p align="center">
-<img src="https://i.imgur.com/dIAU7JS.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/qvdckjx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- For testing purposes, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")
-  - Right-click "mydomain.com" on the left sidebar.
-  - Hover "New", then click "Organizational Unit".
+_For this demonstration, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")_
+- Right-click "mydomain.com" on the left sidebar.
+- Hover "New", then click "Organizational Unit".
 <p align="center">
-<img src="https://i.imgur.com/JnbcP7m.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/4Jm0gW5.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- We'll name one `_EMPLOYEES` and the other `_ADMINS`.
+- Name one `_EMPLOYEES` and the other `_ADMINS`.
 <p align="center">
-<img src="https://i.imgur.com/wpGZ2yx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/YNpRK8u.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Next, we'll add a new Admin user account.
-  - Right-click on `_ADMINS`(or an empty space within the folder).
+_Next, we'll add a new Admin user account inside the `_ADMINS` folder._
+  - Right-click on `_ADMINS`(or any empty space within the folder).
   - Hover "New", then click "User".
 <p align="center">
-<img src="https://i.imgur.com/dyPs4Nq.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/x9FzS23.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Create a name and a login name for this Admin user, then click "Next" (this example uses **Jane Doe** / **jane_admin**)
+- Create a first and last name, as well as a logon name for this Admin user, then click "Next" (this example uses **Jane Doe** / **jane_admin**)
 - Create a password of your choice for that account.
 - Uncheck "User must change password at next logon".
 - Checkmark "Password never expires".
 - Click "Next" until the account is created.
 <p align="center">
-<img src="https://i.imgur.com/S3asA8k.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/vTN4ckZ.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- The account still doesn't have admin privileges yet:
-  - Right-click on the new account, then click "Properties".
+_The user account is only inside a folder named `_ADMINS`, but doesn't mean it has the privileges as one, so:_
+- Right-click on the new account, then click "Properties".
 <p align="center">
-<img src="https://i.imgur.com/3wze3wC.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/6dV5m0S.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Click on the "Member Of" tab, the click the "Add" button.
-- For testing purposes, type in the word "domain", then click "Check Names", so we can see all of the built-in groups.
+- Type in the word "domain", then click "Check Names", allowing to view all already built-in groups.
 - Select "Domain Admins", then "OK".
 - Click "Apply", then "OK" again.
 <p align="center">
-<img src="https://i.imgur.com/OnXFkFv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/ZzPNPHn.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Logon to the newly created admin account (this example uses **mydomain.com\jane_admin**).
-  - Use DC-01 Public IP address to Remote Desktop (this example uses **20.150.151.197**).
+- Once completed, logoff of Domain Controller VM and logon to the newly created admin account with the domain name (this example uses **mydomain.com\jane_admin**).
+  - _We use jane_admin account from now on instead of dcuser._
 <p align="center">
-<img src="https://i.imgur.com/r45UPzB.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/g9bZXb4.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
+<h3>&#9318; Join Client-01 to the domain (mydomain.com)</h3>
 
-
-
-  - 
-  - 
-  - then COPY the NIC Private IP (this example uses **10.0.0.4**).
+- From Azure Portal, go to Client-01 VM Overview page.
+- Click on "Networking", then click on the "Network Interface" (this example uses **client-01857**).
 <p align="center">
-<img src="https://i.imgur.com/n2Dho49.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/eHiv28J.jpg" height="70%" width="70%" alt="Step 2-1"/>
 </p>
 
-- Next, go to Client-01 VM Overview page.
-- Click on "Networking", then click on the "Network Interface" for your VM (this example uses client-01655).
+- Go to "DNS servers" on the left sidebar.
+- Select "Custom" option under DNS servers.
+- Input the DC's Private IP Address (this example uses **10.0.0.4**).
+- Click "Save".
+- Restart Client-01 VM.
+  - _You can also restart the VM from menu options in the Client-01 VM Overview page _
 <p align="center">
-<img src="https://i.imgur.com/GUc31Fx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/LaLsiSk.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+<p align="center">
+<img src="https://i.imgur.com/Sg9pvYY.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Click on "DNS servers".
