@@ -157,9 +157,9 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 </p>
 
 - Inside the Command Prompt, type "ping -t {DC-01 Private IP Address}" (this example uses IP address **10.0.0.4**)
-  - This will infinitely sent data packets for response to the DC-01 VM.
+  - _This will infinitely sent data packets for response to the DC-01 VM._
 - This confirms if the Client VM can see the Domain Controller VM successfully, otherwise you'll recieve a "Request Timed Out" message.
-  - You can either press "Ctrl+C" to stop the ping process, OR you can simply close the Command Prompt.
+  - _You can either press "Ctrl+C" to stop the ping process, OR you can simply close the Command Prompt._
 <p align="center">
 <img src="https://i.imgur.com/KKT14mt.jpg" height="70%" width="70%" alt="Step 3-10"/>
 </p>
@@ -170,7 +170,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - Login to DC-01 VM and open "Server Manager" (if not open already).
 - Click on "Add Roles and Features" (Number 2) on the front page.
 <p align="center">
-<img src="https://i.imgur.com/K9zAZa2.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/LKpjSjC.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Keep clicking "Next" until you reach Server Roles tab.
@@ -179,7 +179,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - Keep clicking "Next" until the Confirmation tab.
 - Click "Install" then close once completed.
 <p align="center">
-<img src="https://i.imgur.com/9nOIZB0.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/nRniK70.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Back on the Server Manager, click on the flag icon with a caution symbol on it (located at top-right header).
