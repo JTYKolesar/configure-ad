@@ -20,11 +20,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022
 - Windows 10 (21H2)
 
-<h2>Configuration Steps</h2>
+<h2>High-Level Deployment and Configuration Steps</h2>
 
 - Setup 2 Virtual Machines within Azure:
-  - Domain Controller VM (Windows Server 2022) and Client VM (Windows 10) using same Resource Group and Vnet
-  - Ensure Connectivity between the Client and Domain Controller
+  - Domain Controller VM (Windows Server 2022)
+  - Client VM (Windows 10) -- using same Resource Group and Vnet as DC
+- Enable Inbound Rules for "Core Networking Diagnostics" within Domain Controller's Firewall to ensure connectivity between the Client and Domain Controller.
 - Install Active Directory Domain Services within Domain Controller VM
 - Create an Admin and Standard User Account in AD
 - Link Cilent VM to a domain
@@ -75,7 +76,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <hr>
 
-<h3>&#9314;Assign Domain Controller's Private IP address to STATIC</h3>
+<h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
 - To make sure users are able to login using a domain name, instead of their standard username, we'll have to make sure the Domain Controller's DNS IP address doesn't get changed in the future:
   - Inside Azure, go to DC-01 VM page.
