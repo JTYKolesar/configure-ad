@@ -139,6 +139,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - Click "Inbound Rules" (on the left sidebar).
 - Find the two names "Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)" (easier to sort by Protocol).
 - Select them both, then click "Enable Rule" on the right sidebar (or right-click, select).
+  - _Make sure that you enable ICMPv4, and NOT ICMPv6!_
 <p align="center">
 <img src="https://i.imgur.com/M1HM7m4.jpg" height="70%" width="70%" alt="Step 3-7"/>
 </p>
@@ -160,7 +161,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - This confirms if the Client VM can see the Domain Controller VM successfully, otherwise you'll recieve a "Request Timed Out" message.
   - You can either press "Ctrl+C" to stop the ping process, OR you can simply close the Command Prompt.
 <p align="center">
-<img src="https://i.imgur.com/MoC4qFF.png" height="70%" width="70%" alt="Step 3-10"/>
+<img src="https://i.imgur.com/KKT14mt.jpg" height="70%" width="70%" alt="Step 3-10"/>
 </p>
 <hr>
 
