@@ -315,13 +315,15 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 - Enter the Admin user's logon credentials (this example uses **mydomain.com\jane_admin**).
 - Click "OK".
 - If done correctly, you should see a welcoming window appear to joining the domain.
+- Click "OK" again and prompts you to require a restart.
 <p align="center">
 <img src="https://i.imgur.com/RRCV4F5.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
-
-- 
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/WjWrOQL.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+<p align="center">
+<img src="https://i.imgur.com/ylYxFqS.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - 
