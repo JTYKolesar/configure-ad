@@ -25,6 +25,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Setup 2 Virtual Machines within Azure:
   - Domain Controller VM (Windows Server 2022)
   - Client VM (Windows 10) -- using same Resource Group and Vnet as DC
+- Login to both VMs using Remote Desktop (RDP).
 - Enable Inbound Rules for "Core Networking Diagnostics" within Domain Controller's Firewall to ensure connectivity between the Client and Domain Controller.
 - Install Active Directory Domain Services within Domain Controller VM
 - Create an Admin and Standard User Account in AD
@@ -38,6 +39,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - In the Search Box at the top header, type and select "Virtual machines".
   - If "Virtual machines" is already listed on the front page, then you can simply click on it, rather than manually searching.
+- Click "Create", then select "Azure virtual machine".
 <p align="center">
 <img src="https://i.imgur.com/tiC5aA4.jpg" height="80%" width="80%" alt="Step 1-1"/>
 </p>
@@ -80,14 +82,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
-- To make sure users are able to login using a domain name, instead of their standard username, we'll have to make sure the Domain Controller's DNS IP address doesn't get changed in the future:
-  - Inside Azure, go to DC-01 VM page.
+- Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:
+  - Inside Azure Portal, go to DC-01 VM page.
   - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
 <img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 1-3"/>
 </p>
 
-- Next, click on "IP configurations" on the left.
+- Click on "IP configurations" on the left.
 - You can see that the Private IP address is Dynamic.
   - Click on "ipconfig1".
 <p align="center">
@@ -103,14 +105,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>&#9315; Ensure Connectivity between the Client and Domain Controller</h3>
 
 - Login to both the Domain Controller and Client-01 VMs with Remote Desktop:
-  - We'll start with the Client-01 VM that was just created and COPY the public IP address (located on the right side).
+  - In Azure Portal, go to any VM page (this example starts with **Client-01 VM**).
+  - COPY its public IP address (located on the right side).
 <p align="center">
 <img src="https://i.imgur.com/cET8L1h.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-- Press the Windows Key (or Start Button), type and select "Remote Desktop Connection".
+- Press the Windows Key (or Button), type and select "Remote Desktop Connection".
 - Input the virtual machine's Public IP Address and click Connect.
-- Enter the username and password for the Client VM, then click OK.
+- Enter the username and password, then click OK.
 <p align="center">
 <img src="https://i.imgur.com/7eZ4mWR.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
@@ -120,7 +123,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/ATSX87v.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
-- You can minimize the Virtual Machine window and do the same thing for the Domain Controller VM.
+- You can minimize the Virtual Machine window and do the same thing for the other VM.
   - Because Domain Controller VM uses Windows Server, the Server Manager will automatically open on bootup.
 <p align="center">
 <img src="https://i.imgur.com/RrkJ4G5.png" height="80%" width="80%" alt="Azure Step 5-5"/>
