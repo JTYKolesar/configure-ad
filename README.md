@@ -24,12 +24,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Setup 2 Virtual Machines within Azure:
   - Domain Controller VM (Windows Server 2022) and Client VM (Windows 10) using same Resource Group and Vnet
-  - Ensure Connectivity between the client and Domain Controller
+  - Ensure Connectivity between the Client and Domain Controller
 - Install Active Directory Domain Services within Domain Controller VM
 - Create an Admin and Standard User Account in AD
 - Link Cilent VM to a domain
 - Setup Remote Desktop for non-administrative users on Client VM
-- Create additional users and attempt to log into Client VM as one of those users
+- Create additional users and attempt to log into Client VM as one of those newly created users
 
 <h2>Step Process</h2>
 
@@ -38,7 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - In the Search Box at the top header, type and select "Virtual machines".
   - If "Virtual machines" is already listed on the front page, then you can simply click on it, rather than manually searching.
 <p>
-<img src="https://i.imgur.com/tiC5aA4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/tiC5aA4.jpg" height="80%" width="80%" alt="Step 1-1"/>
 </p>
 
 - Name your Virtual Machine anyway you want (this example uses **DC-01**).
@@ -51,14 +51,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
 <p>
-<img src="https://i.imgur.com/AsbGinQ.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/RVHx4nb.png" height="70%" width="70%" alt="Step 1-2"/>
 </p>
 <hr>
 
 <h3>&#9313; Create a Client VM</h3>
 
 - Follow the same steps as before for creating a virtual machine.
-  - However, the Resource Group should be assigned to the one created for the Domain Controller VM (this example uses **DC-01_group**).
+  - However, the Resource Group should be assigned to the one for the Domain Controller VM (this example uses **DC-01_group**).
 - Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**)
 - Once done, click "Next" until you reach "Networking" (OR you can simply click the Networking tab at the top).
 <p>
@@ -74,6 +74,27 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/KIMAM1m.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <hr>
+
+<h3>Assigning Domain Controller's Private IP address to STATIC</h3>
+- To make sure users are able to login using a domain name, instead of their standard username, we'll have to make sure the Domain Controller's DNS IP address doesn't get changed in the future:
+  - Inside Azure, go to DC-01 VM page.
+  - Click on "Networking", then click on the "Network Interface" (this example uses **dc-015**).
+<p align="center">
+<img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 1-3"/>
+</p>
+
+- Next, click on "IP configurations" on the left.
+- You can see that the Private IP address is Dynamic.
+  - Click on "ipconfig1".
+<p align="center">
+<img src="https://i.imgur.com/AzqdoWb.jpg" height="70%" width="70%" alt="Step 1-4"/>
+</p>
+
+- Change the Assignment at the bottom to "Static".
+- Click "Save".
+<p align="center">
+<img src="https://i.imgur.com/S6HX1sJ.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
 
 <h3>&#9314; Ensure Connectivity between the Client and Domain Controller</h3>
 
@@ -236,21 +257,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/OnXFkFv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Logoff of DC-01 VM.
-- Now we have to make sure that the DC's DNS IP is set to "Static", so the users can connect using the domain.
-  - Inside Azure, go to DC-01 VM page.
-  - Click on "Networking", then click on the "Network Interface" (this example uses **dc-015**).
-<p align="center">
-<img src="https://i.imgur.com/iso00DP.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-- Change the Assignment at the bottom to "Static".
-- Click "Save".
-<p align="center">
-<img src="https://i.imgur.com/bkA40gJ.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-Logon to the newly created admin account (this example uses **mydomain.com\jane_admin**).
+- Logon to the newly created admin account (this example uses **mydomain.com\jane_admin**).
   - Use DC-01 Public IP address to Remote Desktop (this example uses **20.150.151.197**).
 <p align="center">
 <img src="https://i.imgur.com/r45UPzB.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
