@@ -47,9 +47,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Change the Region that best suites your location (this example uses **(US) West US 3**).
 - Change the Image to a Windows Server, as this will become our Domain Controller VM (this example uses **Windows Server 2022 Datacenter: Azure Edition**).
 - Make sure the Size is adequate enough to run this server (this example uses **Standard_E2s_v3 - 2 vcpus, 16 GiB memory**).
-- Create a username of your choice and password (this example uses **dcuser**).
-- IF there is a Licensing Checkbox at the end, make sure that is CHECKED!
+- Create a username and password of your choice (this example uses **dcuser**).
 - Skip everything else and click "Review + create".
+  - - IF there is a Licensing Checkbox at the end, make sure that is CHECKED!
 - If Validation passed, click "Create".
 <p align="center">
 <img src="https://i.imgur.com/RVHx4nb.png" height="70%" width="70%" alt="Step 1-2"/>
@@ -59,11 +59,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>&#9313; Create a Client VM</h3>
 
 - Follow the same steps as before for creating a virtual machine.
-  - However, the Resource Group should be assigned to the one for the Domain Controller VM (this example uses **DC-01_group**).
+  - However, the Resource Group should be assigned as the same for the Domain Controller VM (this example uses **DC-01_group**).
 - Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**)
 - Once done, click "Next" until you reach "Networking" (OR you can simply click the Networking tab at the top).
 <p align="center">
-<img src="https://i.imgur.com/2QaEfg9.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SDbD5nV.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 - Make sure that the "Virtual network" is set to the Vnet that the Domain Controller VM automatically created (this example uses **DC-01-vnet**).
@@ -72,7 +72,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
 <p align="center">
-<img src="https://i.imgur.com/KIMAM1m.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SiHJ4N0.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <hr>
 
