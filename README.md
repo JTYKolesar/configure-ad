@@ -37,7 +37,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - In the Search Box at the top header, type and select "Virtual machines".
   - If "Virtual machines" is already listed on the front page, then you can simply click on it, rather than manually searching.
-<p>
+<p align="center">
 <img src="https://i.imgur.com/tiC5aA4.jpg" height="80%" width="80%" alt="Step 1-1"/>
 </p>
 
@@ -50,7 +50,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - IF there is a Licensing Checkbox at the end, make sure that is CHECKED!
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
-<p>
+<p align="center">
 <img src="https://i.imgur.com/RVHx4nb.png" height="70%" width="70%" alt="Step 1-2"/>
 </p>
 <hr>
@@ -61,7 +61,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - However, the Resource Group should be assigned to the one for the Domain Controller VM (this example uses **DC-01_group**).
 - Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**)
 - Once done, click "Next" until you reach "Networking" (OR you can simply click the Networking tab at the top).
-<p>
+<p align="center">
 <img src="https://i.imgur.com/2QaEfg9.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
@@ -70,15 +70,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Sometimes you will have to manually set the Subnet, otherwise it will not let you proceed.
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
-<p>
+<p align="center">
 <img src="https://i.imgur.com/KIMAM1m.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <hr>
 
-<h3>Assigning Domain Controller's Private IP address to STATIC</h3>
+<h3>&#9314;Assign Domain Controller's Private IP address to STATIC</h3>
+
 - To make sure users are able to login using a domain name, instead of their standard username, we'll have to make sure the Domain Controller's DNS IP address doesn't get changed in the future:
   - Inside Azure, go to DC-01 VM page.
-  - Click on "Networking", then click on the "Network Interface" (this example uses **dc-015**).
+  - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
 <img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 1-3"/>
 </p>
@@ -96,23 +97,23 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/S6HX1sJ.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-<h3>&#9314; Ensure Connectivity between the Client and Domain Controller</h3>
+<h3>&#9315; Ensure Connectivity between the Client and Domain Controller</h3>
 
 - Login to both the Domain Controller and Client-01 VMs with Remote Desktop:
   - We'll start with the Client-01 VM that was just created and COPY the public IP address (located on the right side).
-<p>
+<p align="center">
 <img src="https://i.imgur.com/cET8L1h.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 - Press the Windows Key (or Start Button), type and select "Remote Desktop Connection".
 - Input the virtual machine's Public IP Address and click Connect.
 - Enter the username and password for the Client VM, then click OK.
-<p>
+<p align="center">
 <img src="https://i.imgur.com/7eZ4mWR.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
 - A prompt will appear about the identity cannot be verified; just press "YES".
-<p>
+<p align="center">
 <img src="https://i.imgur.com/ATSX87v.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 
@@ -158,7 +159,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <hr>
 
-<h3>Install Active Directory Domain Services within Domain Controller VM</h3>
+<h3>&#9316;Install Active Directory Domain Services within Domain Controller VM</h3>
 
 - Login to DC-01 VM and open "Server Manager" (if not open already).
 - Click on "Add Roles and Features" (Number 2) on the front page.
@@ -207,7 +208,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <hr>
 
-<h3>Create an Admin Account in AD</h3>
+<h3>&#9317;Create an Admin Account in AD</h3>
 
 - On the Server Manager, click on "Tools" on the top-right header, then click "Active Directory Users and Computers".
   - You can also search this using the Windows Key (or Start Button).
