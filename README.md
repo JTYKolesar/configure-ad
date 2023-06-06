@@ -125,30 +125,28 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 
 - Minimize the Virtual Machine window and login to the other VM (the Domain Controller).
 <p align="center">
-<img src="https://i.imgur.com/RrkJ4G5.png" height="70%" width="70%" alt="Step 3-4"/>
+<img src="https://i.imgur.com/PpLmQO7.jpg" height="70%" width="70%" alt="Step 3-4"/>
 </p>
-
-_Because Domain Controller VM uses Windows Server, the Server Manager will automatically open on bootup._
 <p align="center">
-<img src="https://i.imgur.com/eRhuXca.png" height="70%" width="70%" alt="Step 3-5"/>
+<img src="https://i.imgur.com/2KVQ6D1.png" height="70%" width="70%" alt="Step 3-5"/>
 </p>
 
 - On the Domain Controller VM, press the Windows Key/Button, then type and select "Windows Defender Firewall with Advanced Security".
 <p align="center">
-<img src="https://i.imgur.com/ljx8ZKr.jpg" height="64%" width="64%" alt="Step 3-6"/>
+<img src="https://i.imgur.com/WulKDTC.png" height="64%" width="64%" alt="Step 3-6"/>
 </p>
 
 - Click "Inbound Rules" (on the left sidebar).
 - Find the two names "Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)" (easier to sort by Protocol).
-- Select them both, then click "Enable Rule" on the right sidebar (or right-click select).
+- Select them both, then click "Enable Rule" on the right sidebar (or right-click, select).
 <p align="center">
-<img src="https://i.imgur.com/u1QjRwc.jpg" height="70%" width="70%" alt="Step 3-7"/>
+<img src="https://i.imgur.com/M1HM7m4.jpg" height="70%" width="70%" alt="Step 3-7"/>
 </p>
 
-- Once those are enabled, minimize the VM and return to the DC-01 VM page in Azure.
-- Now we need to copy the Private IP Address for DC-01 VM.
+- Once enabled, return to the DC-01 VM page in Azure.
+- COPY the Private IP Address.
 <p align="center">
-<img src="https://i.imgur.com/awIt58a.jpg" height="70%" width="70%" alt="Step 3-8"/>
+<img src="https://i.imgur.com/mAvwb9i.jpg" height="70%" width="70%" alt="Step 3-8"/>
 </p>
 
 - With that copied, go into the Client-01 VM.
