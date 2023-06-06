@@ -67,7 +67,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**).
 - Once done, click "Next" until you reach "Networking" (OR you can simply click the Networking tab at the top).
 <p align="center">
-<img src="https://i.imgur.com/SDbD5nV.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SDbD5nV.jpg" height="70%" width="70%" alt="Step 1-3"/>
 </p>
 
 - Make sure that the "Virtual network" is set to the Vnet that the Domain Controller VM automatically created (this example uses **DC-01-vnet**).
@@ -76,30 +76,30 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
 <p align="center">
-<img src="https://i.imgur.com/SiHJ4N0.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/SiHJ4N0.jpg" height="70%" width="70%" alt="Step 1-4"/>
 </p>
 <hr>
 
 <h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
-- Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:
-  - Inside Azure Portal, go to DC-01 VM page.
-  - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
+_Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
+- Inside Azure Portal, go to DC-01 VM page.
+- Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
-<img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 1-3"/>
+<img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 2-1"/>
 </p>
 
 - Click on "IP configurations" on the left.
 - You can see that the Private IP address is Dynamic.
   - Click on "ipconfig1".
 <p align="center">
-<img src="https://i.imgur.com/AzqdoWb.jpg" height="70%" width="70%" alt="Step 1-4"/>
+<img src="https://i.imgur.com/AzqdoWb.jpg" height="70%" width="70%" alt="Step 2-2"/>
 </p>
 
 - Change the Assignment at the bottom to "Static".
 - Click "Save".
 <p align="center">
-<img src="https://i.imgur.com/S6HX1sJ.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/S6HX1sJ.jpg" height="70%" width="70%" alt="Step 2-3"/>
 </p>
 
 <h3>&#9315; Ensure Connectivity between the Client and Domain Controller</h3>
@@ -108,52 +108,53 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - In Azure Portal, go to any VM page (this example starts with **Client-01 VM**).
   - COPY its public IP address (located on the right side).
 <p align="center">
-<img src="https://i.imgur.com/cET8L1h.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/l1jop0r.jpg" height="70%" width="70%" alt="Step 3-1"/>
 </p>
 
-- Press the Windows Key (or Button), type and select "Remote Desktop Connection".
+- Press the Windows Key/Button, type and select "Remote Desktop Connection".
 - Input the virtual machine's Public IP Address and click Connect.
 - Enter the username and password, then click OK.
 <p align="center">
-<img src="https://i.imgur.com/7eZ4mWR.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/hcBKjWu.jpg" height="70%" width="70%" alt="Step 3-2"/>
 </p>
 
 - A prompt will appear about the identity cannot be verified; just press "YES".
 <p align="center">
-<img src="https://i.imgur.com/ATSX87v.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/3YxlS2G.jpg" height="70%" width="70%" alt="Step 3-3"/>
 </p>
 
-- You can minimize the Virtual Machine window and do the same thing for the other VM.
-  - Because Domain Controller VM uses Windows Server, the Server Manager will automatically open on bootup.
+- Minimize the Virtual Machine window and login to the other VM (the Domain Controller).
 <p align="center">
-<img src="https://i.imgur.com/RrkJ4G5.png" height="80%" width="80%" alt="Azure Step 5-5"/>
-</p>
-<p align="center">
-<img src="https://i.imgur.com/eRhuXca.png" height="80%" width="80%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/RrkJ4G5.png" height="70%" width="70%" alt="Step 3-4"/>
 </p>
 
-- On the Domain Controller VM, press the Windows key (or Start Button) and type and select "Windows Defender Firewall with Advanced Security".
+_Because Domain Controller VM uses Windows Server, the Server Manager will automatically open on bootup._
 <p align="center">
-<img src="https://i.imgur.com/ljx8ZKr.jpg" height="64%" width="64%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/eRhuXca.png" height="70%" width="70%" alt="Step 3-5"/>
+</p>
+
+- On the Domain Controller VM, press the Windows Key/Button, then type and select "Windows Defender Firewall with Advanced Security".
+<p align="center">
+<img src="https://i.imgur.com/ljx8ZKr.jpg" height="64%" width="64%" alt="Step 3-6"/>
 </p>
 
 - Click "Inbound Rules" (on the left sidebar).
 - Find the two names "Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)" (easier to sort by Protocol).
 - Select them both, then click "Enable Rule" on the right sidebar (or right-click select).
 <p align="center">
-<img src="https://i.imgur.com/u1QjRwc.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/u1QjRwc.jpg" height="70%" width="70%" alt="Step 3-7"/>
 </p>
 
 - Once those are enabled, minimize the VM and return to the DC-01 VM page in Azure.
 - Now we need to copy the Private IP Address for DC-01 VM.
 <p align="center">
-<img src="https://i.imgur.com/awIt58a.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/awIt58a.jpg" height="70%" width="70%" alt="Step 3-8"/>
 </p>
 
 - With that copied, go into the Client-01 VM.
 - Press the Windows key (or Start Button), the type and select CMD or "Command Prompt" (you can run as Admin if desired).
 <p align="center">
-<img src="https://i.imgur.com/RcjEEef.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/RcjEEef.jpg" height="70%" width="70%" alt="Step 3-9"/>
 </p>
 
 - Inside the Command Prompt, type "ping -t {DC-01 Private IP Address}" (this example uses IP address 10.0.0.4)
@@ -161,7 +162,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - This confirms if the Client VM can see the Domain Controller VM successfully, otherwise you'll recieve a "Request Timed Out" messege instead.
   - You can either press "Ctrl+C" to stop the ping process, OR you can simply close the Command Prompt.
 <p align="center">
-<img src="https://i.imgur.com/MoC4qFF.png" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/MoC4qFF.png" height="70%" width="70%" alt="Step 3-10"/>
 </p>
 <hr>
 
