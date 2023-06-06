@@ -67,7 +67,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Make sure that the "Virtual network" is set to the Vnet that the Domain Controller VM automatically created (this example uses **DC-01-vnet**).
 - Select the dropdown box for Subnet and confirm the default selection (this example uses **default (10.0.0.0/24)**).
-  - Despite visually shown that the Subnet is set, you must manually confirm that configuration otherwise it will not let you create the VM.
+  - Sometimes you will have to manually set the Subnet, otherwise it will not let you proceed.
 - Skip everything else and click "Review + create".
 - If Validation passed, click "Create".
 <p>
