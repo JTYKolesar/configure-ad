@@ -83,7 +83,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
 _Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
-- Inside Azure Portal, go to DC-01 VM page.
+- Inside Azure Portal, go to DC-01 VM Overview page.
 - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
 <img src="https://i.imgur.com/OV6YK9L.jpg" height="70%" width="70%" alt="Step 2-1"/>
@@ -105,7 +105,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 <h3>&#9315; Ensure Connectivity between the Client and Domain Controller</h3>
 
 - Login to both the Domain Controller and Client-01 VMs with Remote Desktop:
-  - In Azure Portal, go to any VM page (this example starts with **Client-01 VM**).
+  - In Azure Portal, go to any VM Overview page (this example starts with **Client-01 VM**).
   - COPY its public IP address (located on the right side).
 <p align="center">
 <img src="https://i.imgur.com/l1jop0r.jpg" height="70%" width="70%" alt="Step 3-1"/>
@@ -144,7 +144,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 <img src="https://i.imgur.com/M1HM7m4.jpg" height="70%" width="70%" alt="Step 3-7"/>
 </p>
 
-- Once enabled, return to the DC-01 VM page in Azure.
+- Once enabled, return to the DC-01 VM Overview page in Azure.
 - COPY the Private IP Address.
 <p align="center">
 <img src="https://i.imgur.com/mAvwb9i.jpg" height="70%" width="70%" alt="Step 3-8"/>
@@ -280,7 +280,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 <img src="https://i.imgur.com/n2Dho49.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Next, go to Client-01 VM page.
+- Next, go to Client-01 VM Overview page.
 - Click on "Networking", then click on the "Network Interface" for your VM (this example uses client-01655).
 <p align="center">
 <img src="https://i.imgur.com/GUc31Fx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
