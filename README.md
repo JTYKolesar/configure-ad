@@ -49,7 +49,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Make sure the Size is adequate enough to run this server (this example uses **Standard_E2s_v3 - 2 vcpus, 16 GiB memory**).
 - Create a username and password of your choice (this example uses **dcuser**).
 - Skip everything else and click "Review + create".
-  - - IF there is a Licensing Checkbox at the end, make sure that is CHECKED!
+  - IF there is a Licensing Checkbox at the end, make sure that is CHECKED!
 - If Validation passed, click "Create".
 <p align="center">
 <img src="https://i.imgur.com/RVHx4nb.png" height="70%" width="70%" alt="Step 1-2"/>
@@ -60,7 +60,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Follow the same steps as before for creating a virtual machine.
   - However, the Resource Group should be assigned as the same for the Domain Controller VM (this example uses **DC-01_group**).
-- Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**)
+  - Use a different virtual machine name (this example uses **Client-01**).
+  - Change the Administrator Account credentials to differentiate the two VMs (this example uses **clientuser**).
+- Change the Image to a Windows OS (this example uses **Windows 10 Pro, version 22H2 - x64 Gen2**).
 - Once done, click "Next" until you reach "Networking" (OR you can simply click the Networking tab at the top).
 <p align="center">
 <img src="https://i.imgur.com/SDbD5nV.jpg" height="70%" width="70%" alt="Disk Sanitization Steps"/>
