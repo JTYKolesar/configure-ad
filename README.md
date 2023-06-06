@@ -185,23 +185,23 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - Back on the Server Manager, click on the flag icon with a caution symbol on it (located at top-right header).
 - Click "Promote this server to a domain controller"
 <p align="center">
-<img src="https://i.imgur.com/AbsEMHE.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/5SEF3r7.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - In the Deployment Configuration tab, select "Add a new forest".
 - Type any domain name you wish to use (this example uses **mydomain.com**)
 - Click "Next".
 <p align="center">
-<img src="https://i.imgur.com/4yWhBwY.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/KqLJ1zR.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Create a password of your choice.
 - Keep clicking "Next" until the "Install" option is enabled, then click "Install".
-  - NOTE: Installing will result in restarting the Domain Controller VM.
+  - _Installing will result in restarting the Domain Controller VM._
 <p align="center">
-<img src="https://i.imgur.com/PbAlutu.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-<img src="https://i.imgur.com/MIIpoBI.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-<img src="https://i.imgur.com/WU5aFEK.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/sOfwFw2.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/GGJhNCF.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/8eabtaB.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - Once completed, log back into the DC-01 VM.
