@@ -152,12 +152,12 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - With that copied, go into the Client-01 VM.
 - Press the Windows key (or Start Button), the type and select CMD or "Command Prompt" (you can run as Admin if desired).
 <p align="center">
-<img src="https://i.imgur.com/RcjEEef.jpg" height="70%" width="70%" alt="Step 3-9"/>
+<img src="https://i.imgur.com/ca7M8oS.jpg" height="70%" width="70%" alt="Step 3-9"/>
 </p>
 
-- Inside the Command Prompt, type "ping -t {DC-01 Private IP Address}" (this example uses IP address 10.0.0.4)
+- Inside the Command Prompt, type "ping -t {DC-01 Private IP Address}" (this example uses IP address **10.0.0.4**)
   - This will infinitely sent data packets for response to the DC-01 VM.
-- This confirms if the Client VM can see the Domain Controller VM successfully, otherwise you'll recieve a "Request Timed Out" messege instead.
+- This confirms if the Client VM can see the Domain Controller VM successfully, otherwise you'll recieve a "Request Timed Out" message.
   - You can either press "Ctrl+C" to stop the ping process, OR you can simply close the Command Prompt.
 <p align="center">
 <img src="https://i.imgur.com/MoC4qFF.png" height="70%" width="70%" alt="Step 3-10"/>
