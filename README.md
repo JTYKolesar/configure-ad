@@ -284,7 +284,8 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 - Input the DC's Private IP Address (this example uses **10.0.0.4**).
 - Click "Save".
 - Restart Client-01 VM.
-  - _You can also restart the VM from menu options in the Client-01 VM Overview page _
+  - _You can also press the Restart button in the Client-01 VM Overview page_.
+  - _Logon again to Client-01 VM_.
 <p align="center">
 <img src="https://i.imgur.com/LaLsiSk.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
@@ -292,35 +293,38 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 <img src="https://i.imgur.com/Sg9pvYY.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- Click on "DNS servers".
-- Select the "Custom" option under DNS server.
-- Input the NIC Private IP from DC-01 VM (this example uses **10.0.0.4**).
-- Click "Save", then restart the Client-01 VM.
+- On Client-01 VM, Right-click the Windows Button and select "System".
 <p align="center">
-<img src="https://i.imgur.com/6jpSDb0.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/JBMFeOM.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
--
+- Click on "Rename this PC (advanced)"
+<p align="center">
+<img src="https://i.imgur.com/BnEqRHf.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Within the System Properties window, click "Change".
+  - _This will allow us to use the domain name connected to the Domain Controller._
+- Under Member Of, select "Domain" option, then type your domain name (this example uses **mydomain.com**).
+- Then click "OK".
+  - _A login prompt will appear._
+<p align="center">
+<img src="https://i.imgur.com/ERxuEiv.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Enter the Admin user's logon credentials (this example uses **mydomain.com\jane_admin**).
+- Click "OK".
+- If done correctly, you should see a welcoming window appear to joining the domain.
+<p align="center">
+<img src="https://i.imgur.com/RRCV4F5.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
 <p align="center">
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
--
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
--
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
--
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
--
+- 
 <p align="center">
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
