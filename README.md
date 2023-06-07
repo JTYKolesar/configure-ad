@@ -363,7 +363,8 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 <img src="https://i.imgur.com/js2KU37.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-_We are going to run a script inside PowerShell_ISE, which can be found here:_
+- At the top menu, click on "New Script"
+- Using a premade script, paste the code into the box:
 <details close>
   <summary> PowerShell Script </summary>
   <p>
@@ -415,9 +416,8 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
 }
     </p>
 </details close>
-- 
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/2w34lrh.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - 
@@ -434,3 +434,5 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
 <p align="center">
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
+
+
