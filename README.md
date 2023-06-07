@@ -126,8 +126,6 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 - Minimize the Virtual Machine window and login to the other VM (the Domain Controller).
 <p align="center">
 <img src="https://i.imgur.com/PpLmQO7.jpg" height="70%" width="70%" alt="Step 3-4"/>
-</p>
-<p align="center">
 <img src="https://i.imgur.com/2KVQ6D1.png" height="70%" width="70%" alt="Step 3-5"/>
 </p>
 
@@ -288,8 +286,6 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
   - _Logon again to Client-01 VM_.
 <p align="center">
 <img src="https://i.imgur.com/LaLsiSk.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-<p align="center">
 <img src="https://i.imgur.com/Sg9pvYY.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
@@ -318,11 +314,7 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 - Click "OK" again and prompts you to require a restart.
 <p align="center">
 <img src="https://i.imgur.com/RRCV4F5.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-<p align="center">
 <img src="https://i.imgur.com/WjWrOQL.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-<p align="center">
 <img src="https://i.imgur.com/ylYxFqS.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
@@ -364,7 +356,8 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 </p>
 
 - At the top menu, click on "New Script"
-- Using a premade script, paste the code into the box:
+- Using a premade script, copy and paste the code into the box.
+
 <details close>
   <summary> PowerShell Script </summary>
   <p>
@@ -416,8 +409,29 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
 }
     </p>
 </details close>
+
+- When ready, at the top menu, click the "Run" button (green play button icon).
+  - _This script will create 100 accounts using the password "Password1" (variables set at beginning of code).
+These accounts will be placed at its set path: `_EMPLOYEES`, listed near the end of the code._
 <p align="center">
 <img src="https://i.imgur.com/2w34lrh.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/sIr018L.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Open "Active Directory Users and Computers" (from the Server Manager or Windows search)
+- Reveal mydomain.com, then reveal `_EMPLOYEES` folder.
+  - _You should see all of the randomly created user accounts in this folder._
+<p align="center">
+<img src="https://i.imgur.com/W8M9O4l.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+_Next, we're going to attempt to login one of those random users to Client-01 VM._
+- Copy any randomly created user (this example will use **did.cuta**).
+- Logoff of any account currently on Client-01 VM, and attempt to login with the random user.
+  - _Remember to start with the domain name before the username._
+<p align="center">
+<img src="https://i.imgur.com/GHvYS94.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/oXORyTs.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
 - 
@@ -435,4 +449,12 @@ while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
 
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
