@@ -348,16 +348,73 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 - Next, click "Add...".
 - Type in "Domain_Users" into the Object names box.
   - _You can also click Check Names like in Step 6._
-- Once assigned, click "OK" and "OK" again. 
+- Once assigned, click "OK" and "OK" again.
+  - _This now makes Client-01 as a normal, non-administrative user._
 <p align="center">
 <img src="https://i.imgur.com/PP0Xr1p.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+<h3>&#9320; Create additional users and attempt to log into Client-01 with one of them</h3>
+
+- Login to DC-01 as your admin account, if not already (this example uses **jane_admin**).
+- Press the Windows Key/Button and open "PowerShell_ISE" as an Administrator.
+  - _Right-click on PowerShell_ISE and select Run as administrator._
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/js2KU37.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
+_We are going to run a script inside PowerShell_ISE, which can be found here:_
+<details close>
+  <summary> PowerShell Script </summary>
+  <p>
+ # ----- Edit these Variables for your own Use Case ----- #
+$PASSWORD_FOR_USERS   = "Password1"
+$NUMBER_OF_ACCOUNTS_TO_CREATE = 100
+# ------------------------------------------------------ #
+
+Function generate-random-name() {
+    $consonants = @('b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','z')
+    $vowels = @('a','e','i','o','u','y')
+    $nameLength = Get-Random -Minimum 3 -Maximum 7
+    $count = 0
+    $name = ""
+
+    while ($count -lt $nameLength) {
+        if ($($count % 2) -eq 0) {
+            $name += $consonants[$(Get-Random -Minimum 0 -Maximum $($consonants.Count - 1))]
+        }
+        else {
+            $name += $vowels[$(Get-Random -Minimum 0 -Maximum $($vowels.Count - 1))]
+        }
+        $count++
+    }
+
+    return $name
+
+}
+
+$count = 1
+while ($count -lt $NUMBER_OF_ACCOUNTS_TO_CREATE) {
+    $fisrtName = generate-random-name
+    $lastName = generate-random-name
+    $username = $fisrtName + '.' + $lastName
+    $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
+
+    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+    
+    New-AdUser -AccountPassword $password `
+               -GivenName $firstName `
+               -Surname $lastName `
+               -DisplayName $username `
+               -Name $username `
+               -EmployeeID $username `
+               -PasswordNeverExpires $true `
+               -Path "ou=_EMPLOYEES,$(([ADSI]`"").distinguishedName)" `
+               -Enabled $true
+    $count++
+}
+    </p>
+</details close>
 - 
 <p align="center">
 <img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
