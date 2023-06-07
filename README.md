@@ -445,7 +445,6 @@ _Whether it's failing at logging into accounts, resetting a password, or protect
 <img src="https://i.imgur.com/VOUcyyi.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-<font size="30">
-**... AND WITH THAT, ENDS THIS TUTORIAL!**
-</font>
-<hr>
+<h1>TUTORIAL END.<br /></h1>
+
+<h3>DON'T FORGET TO DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!</h3>
