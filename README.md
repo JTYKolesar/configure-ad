@@ -165,7 +165,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 </p>
 <hr>
 
-<h3>&#9316;Install Active Directory Domain Services within Domain Controller VM</h3>
+<h3>&#9316; Install Active Directory Domain Services within Domain Controller VM</h3>
 
 - Login to DC-01 VM and open "Server Manager" (if not open already).
 - Click on "Add Roles and Features" (Number 2) on the front page.
@@ -331,4 +331,49 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
   - _The admin account is already logged onto the DC-01 VM, but this time we are logging in through the Client-01 VM._
 <p align="center">
 <img src="https://i.imgur.com/zM9oOdR.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+<h3>&#9319; Setup Remote Desktop for non-administrative users on Client-01</h3>
+
+- Right-click the Windows Button and select "System", then click "Remote Desktop".
+<p align="center">
+<img src="https://i.imgur.com/6ddD3c5.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- At the bottom, click "Select users that can remotely access this PC".
+<p align="center">
+<img src="https://i.imgur.com/C6Bb4qG.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- Next, click "Add...".
+- Type in "Domain_Users" into the Object names box.
+  - _You can also click Check Names like in Step 6._
+- Once assigned, click "OK" and "OK" again. 
+<p align="center">
+<img src="https://i.imgur.com/PP0Xr1p.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+</p>
+
+- 
+<p align="center">
+<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
