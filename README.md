@@ -108,14 +108,14 @@ _Later in this tutorial, we'll need users to login using a domain name instead o
   - In Azure Portal, go to any VM Overview page (this example starts with **Client-01 VM**).
   - COPY its public IP address (located on the right side).
 <p align="center">
-<img src="https://i.imgur.com/l1jop0r.jpg" height="70%" width="70%" alt="Step 3-1"/>
+<img src="https://i.imgur.com/l1jop0r.jpg" height="90%" width="90%" alt="Step 3-1"/>
 </p>
 
 - Press the Windows Key/Button, type and select "Remote Desktop Connection".
 - Input the virtual machine's Public IP Address and click Connect.
 - Enter the username and password, then click OK.
 <p align="center">
-<img src="https://i.imgur.com/hcBKjWu.jpg" height="70%" width="70%" alt="Step 3-2"/>
+<img src="https://i.imgur.com/hcBKjWu.jpg" height="90%" width="90%" alt="Step 3-2"/>
 </p>
 
 - A prompt will appear about the identity cannot be verified; just press "YES".
@@ -125,8 +125,8 @@ _Later in this tutorial, we'll need users to login using a domain name instead o
 
 - Minimize the Virtual Machine window and login to the other VM (the Domain Controller).
 <p align="center">
-<img src="https://i.imgur.com/PpLmQO7.jpg" height="70%" width="70%" alt="Step 3-4"/>
-<img src="https://i.imgur.com/2KVQ6D1.png" height="70%" width="70%" alt="Step 3-5"/>
+<img src="https://i.imgur.com/PpLmQO7.jpg" height="90%" width="90%" alt="Step 3-4"/>
+<img src="https://i.imgur.com/2KVQ6D1.png" height="64%" width="64%" alt="Step 3-5"/>
 </p>
 
 - On the Domain Controller VM, press the Windows Key/Button, then type and select "Windows Defender Firewall with Advanced Security".
@@ -139,13 +139,13 @@ _Later in this tutorial, we'll need users to login using a domain name instead o
 - Select them both, then click "Enable Rule" on the right sidebar (or right-click, select).
   - _Make sure that you enable ICMPv4, and NOT ICMPv6!_
 <p align="center">
-<img src="https://i.imgur.com/M1HM7m4.jpg" height="70%" width="70%" alt="Step 3-7"/>
+<img src="https://i.imgur.com/M1HM7m4.jpg" height="100%" width="100%" alt="Step 3-7"/>
 </p>
 
 - Once enabled, return to the DC-01 VM Overview page in Azure.
 - COPY the Private IP Address.
 <p align="center">
-<img src="https://i.imgur.com/mAvwb9i.jpg" height="70%" width="70%" alt="Step 3-8"/>
+<img src="https://i.imgur.com/mAvwb9i.jpg" height="100%" width="100%" alt="Step 3-8"/>
 </p>
 
 - With that copied, go into the Client-01 VM.
@@ -177,7 +177,7 @@ _Later in this tutorial, we'll need users to login using a domain name instead o
 - Keep clicking "Next" until the Confirmation tab.
 - Click "Install" then close once completed.
 <p align="center">
-<img src="https://i.imgur.com/nRniK70.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/nRniK70.jpg" height="100%" width="100%" alt="Azure Step 5-5"/>
 </p>
 
 - Back on the Server Manager, click on the flag icon with a caution symbol on it (located at top-right header).
