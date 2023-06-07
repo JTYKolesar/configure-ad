@@ -82,7 +82,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
-_Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
+_Later in this tutorial, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
 - From Azure Portal, go to DC-01 VM Overview page.
 - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
@@ -221,7 +221,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 <img src="https://i.imgur.com/qvdckjx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-_For this demonstration, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")_
+_For this tutorial, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")_
 - Right-click "mydomain.com" on the left sidebar.
 - Hover "New", then click "Organizational Unit".
 <p align="center">
@@ -268,6 +268,7 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 <p align="center">
 <img src="https://i.imgur.com/g9bZXb4.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
+<hr>
 
 <h3>&#9318; Join Client-01 to the domain (mydomain.com)</h3>
 
@@ -324,6 +325,7 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 <p align="center">
 <img src="https://i.imgur.com/zM9oOdR.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
+<hr>
 
 <h3>&#9319; Setup Remote Desktop for non-administrative users on Client-01</h3>
 
@@ -345,6 +347,7 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 <p align="center">
 <img src="https://i.imgur.com/PP0Xr1p.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
+<hr>
 
 <h3>&#9320; Create additional users and attempt to log into Client-01 with one of them</h3>
 
@@ -434,27 +437,15 @@ _Next, we're going to attempt to login one of those random users to Client-01 VM
 <img src="https://i.imgur.com/oXORyTs.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+_Whether it's failing at logging into accounts, resetting a password, or protecting against dangerous actors, there will always be a need for assistance to access one's account._
+- Double-click the user's account (this example uses **did.cuta**) to access the properties.
+  - _You can also Right-Click on the account for the Context Menu._
+  - With this you can unlock accounts, reset passwords, and more!
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/VOUcyyi.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-- 
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-- 
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
-
-- 
-<p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
-</p>
+<font size="30">
+**... AND WITH THAT, ENDS THIS TUTORIAL!**
+</font>
+<hr>
