@@ -326,7 +326,9 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 <img src="https://i.imgur.com/ylYxFqS.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-- 
+- Use Remote Desktop (RDP) to logon to the Client-01 VM.
+- Click "Use a different account", for now we will logon using the jane_admin account.
+  - _The admin account is already logged onto the DC-01 VM, but this time we are logging in through the Client-01 VM._
 <p align="center">
-<img src="" height="70%" width="70%" alt="Azure Step 5-5"/>
+<img src="https://i.imgur.com/zM9oOdR.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
