@@ -446,3 +446,4 @@ _Whether it's failing at logging into accounts, resetting a password, or protect
 <h1>TUTORIAL END.<br /></h1>
 
 <h3>DON'T FORGET TO DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!</h3>
+_If you don't know how to, click_ <a href="https://github.com/JTYKolesar/azure-start/blob/main/README.md#bonus-delete-all-resources-in-azure">HERE</a>_
