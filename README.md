@@ -4,7 +4,7 @@
 
 <h1>Microsoft Azure - Active Directory (AD)</h1>
 
-This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
+This demonstration outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -80,7 +80,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>&#9314; Assign Domain Controller's Private IP address to STATIC</h3>
 
-_Later in this tutorial, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
+_Later in this demonstration, we'll need users to login using a domain name instead of their standard username, so we'll have to make sure the Domain Controller's NIC Private IP address doesn't get changed in the future:_
 - From Azure Portal, go to DC-01 VM Overview page.
 - Click on "Networking", then click on the "Network Interface" (this example uses **dc-01667**).
 <p align="center">
@@ -219,7 +219,7 @@ _Later in this tutorial, we'll need users to login using a domain name instead o
 <img src="https://i.imgur.com/qvdckjx.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-_For this tutorial, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")_
+_For this demonstration, we will create 2 new folders within mydomain.com (also known as "Organizational Unit")_
 - Right-click "mydomain.com" on the left sidebar.
 - Hover "New", then click "Organizational Unit".
 <p align="center">
@@ -443,7 +443,7 @@ _Whether it's failing at logging into accounts, resetting a password, or protect
 <img src="https://i.imgur.com/VOUcyyi.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-<h1>TUTORIAL END.<br /></h1>
+<h1>(ﾉ^ヮ^)ﾉ*:・ﾟ✧ COMPLETE! ✧ﾟ・:*╰(^ヮ^╰)<br /></h1>
 
 <h3>DON'T FORGET TO DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!</h3>
 
