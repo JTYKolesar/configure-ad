@@ -443,7 +443,7 @@ _Whether it's failing at logging into accounts, resetting a password, or protect
 <img src="https://i.imgur.com/VOUcyyi.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
 
-<h1>(ﾉ^ヮ^)ﾉ*:・ﾟ✧ COMPLETE! ✧ﾟ・:*╰(^ヮ^╰)<br /></h1>
+<h1><p align=center>(ﾉ^ヮ^)ﾉ*:・ﾟ✧ COMPLETE! ✧ﾟ・:*╰(^ヮ^╰)</p></h1>
 
 <h3>DON'T FORGET TO DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!</h3>
 
