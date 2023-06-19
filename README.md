@@ -99,6 +99,7 @@ _Later in this demonstration, we'll need users to login using a domain name inst
 <p align="center">
 <img src="https://i.imgur.com/S6HX1sJ.jpg" height="70%" width="70%" alt="Step 2-3"/>
 </p>
+<hr>
 
 <h3>&#9315; Ensure Connectivity between the Client and Domain Controller</h3>
 
@@ -442,9 +443,12 @@ _Whether it's failing at logging into accounts, resetting a password, or protect
 <p align="center">
 <img src="https://i.imgur.com/VOUcyyi.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 </p>
+<hr>
 
 <h1><p align=center>(ﾉ^ヮ^)ﾉ*:・ﾟ✧ COMPLETE! ✧ﾟ・:*╰(^ヮ^╰)</p></h1>
 
-<h3>DON'T FORGET TO DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!</h3>
+<h2><p align=center>Next Demonstration:<br><a href="https://github.com/JTYKolesar/azure-network-protocols">Network Security Groups (NSGs) and Inspecting Network Protocols</a></p></h2>
 
-_If you don't know how to, click <a href="https://github.com/JTYKolesar/azure-start/blob/main/README.md#bonus-delete-all-resources-in-azure">HERE</a>_
+<p align=right>DELETE **EVERYTHING!** IN AZURE TO SAVE CREDITS!<br>
+If you don't know how to, click <a href="https://github.com/JTYKolesar/azure-start/blob/main/README.md#bonus-delete-all-resources-in-azure">HERE</a>
+</p>
