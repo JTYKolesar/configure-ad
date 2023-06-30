@@ -23,13 +23,13 @@ _<b>NOTE:</b> This demonstration uses materials created in the previous demonstr
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Setup 2 Virtual Machines within Azure:
-  - Domain Controller VM (Windows Server 2022)
+  - Domain Controller VM (Windows Server 2022) -- set Private IP Address to STATIC
   - Client VM (Windows 10) -- using same Resource Group and Vnet as DC
 - Login to both VMs using Remote Desktop (RDP).
 - Enable Inbound Rules for "Core Networking Diagnostics" within Domain Controller's Firewall to ensure connectivity between the Client and Domain Controller.
 - Install Active Directory Domain Services within Domain Controller VM
 - Create an Admin and Standard User Account in AD
-- Link Cilent VM to a domain
+- Link Cilent VM to a domain, then login using original admin account
 - Setup Remote Desktop for non-administrative users on Client VM
 - Create additional users and attempt to log into Client VM as one of those newly created users
 
