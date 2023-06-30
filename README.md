@@ -285,7 +285,7 @@ _The user account is only inside a folder named `_ADMINS`, but doesn't mean it h
 - Click "Save".
 - Restart Client-01 VM.
   - _You can also press the Restart button in the Client-01 VM Overview page_.
-  - _Logon again to Client-01 VM_.
+  - _Using Client-01 VM, logon as the original admin account instead (this example uses **dcuser**)_.
 <p align="center">
 <img src="https://i.imgur.com/LaLsiSk.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
 <img src="https://i.imgur.com/Sg9pvYY.jpg" height="70%" width="70%" alt="Azure Step 5-5"/>
