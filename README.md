@@ -6,7 +6,7 @@
 
 This demonstration outlines the implementation of on-premises Active Directory within Azure Virtual Machines.
 
-_<b>NOTE:</b> This demonstration uses materials created in the previous demonstration, ["Creating an Azure Account ➔ Establishing a Virtual Machine"](https://github.com/JTYKolesar/azure-start)._
+_<b>NOTE:</b> The following below uses materials created in the previous demonstration, ["Creating an Azure Account ➔ Establishing a Virtual Machine"](https://github.com/JTYKolesar/azure-start)._
 
 <h2>Environments and Technologies Used</h2>
 
