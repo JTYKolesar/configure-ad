@@ -24,7 +24,7 @@ _<b>NOTE:</b> The following below uses materials created in the previous demonst
 
 - Setup 2 Virtual Machines within Azure:
   - Domain Controller VM (Windows Server 2022) -- set Private IP Address to STATIC
-  - Client VM (Windows 10) -- using same Resource Group and Vnet as DC
+  - Client VM (Windows 10) -- same Resource Group and Vnet as DC + set DNS Server to use DC's Private IP address.
 - Login to both VMs using Remote Desktop (RDP).
 - Enable Inbound Rules for "Core Networking Diagnostics" within Domain Controller's Firewall to ensure connectivity between the Client and Domain Controller.
 - Install Active Directory Domain Services within Domain Controller VM
